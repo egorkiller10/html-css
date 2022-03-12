@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Недвижимость</title>
+</head>
+<body>
+    <form action="#" method="post" name="districkt">
+            <div>
+                <input type="text" required name="area" placeholder="район">
+                <input type="text" placeholder="метро" required name="metro">
+                <input type="text" placeholder="улица" required name="street"> 
+            </div>
+        <fieldset>
+            <legend>Количество комнат</legend>
+                <label>
+                    1 комната
+                    <input type="checkbox" name="room[]" value="1">
+                </label>
+                <label>
+                    2 комнаты
+                    <input type="checkbox" name="room[]" value="2">
+                </label>
+                <label>
+                    3 комнаты
+                    <input type="checkbox" name="room[]" value="3">
+                </label>
+        </fieldset>
+        <label for="age">Год сдачи</label>
+            <select id="age" name="age">
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+            </select>
+            <div>
+                <label for="price">Укажите максимальную цену</label>
+                <input id="price" type="number" min="4500000" max="5000000" 
+                step="500000" 
+                name="price">
+                </div>
+                <div>
+                    <label for="flat-area">Максимальная площадь</label>
+                    <input id="flat-area" type="number" min="150" max="250" step="50"
+                    name="flat-area">
+                </div>
+        <fieldset>
+            <legend>Отделка</legend>
+                <label>
+                С отделкой
+                <input type="radio" name="finishing" value="with" checked>
+                </label>
+                <label>
+                без отделки
+                <input type="radio" name="finishing" value="nothing">
+                </label>
+        </fieldset>
+        <fieldset>
+            <legend>Терраса</legend>
+                <label>
+                С террасой
+                <input type="radio" name="terrace" value="with" checked>
+                </label>
+                <label>
+                Без террасы
+                <input type="radio" name="terrace" value="nothing">
+                </label>
+        </fieldset>
+            <label for="class">Класс жилья</label>
+                <select id="class" multiple>
+                    <option value="business">Бизнес-класс</option>
+                    <option value="premium">Премиум</option>
+                    <option value="deluxe">Deluxe</option>
+                </select>
+        <fieldset>
+            <legend>Выбор этажа</legend>
+                <label>
+                1 этаж
+                <input type="checkbox" name="floor[]" value="1">
+                </label>    
+                <label>
+                2 этаж
+                <input type="checkbox" name="floor[]" value="2">
+                </label>
+    
+                <label>
+                3 этаж
+                <input type="checkbox" name="floor[]" value="3">
+                </label>
+    
+                <label>
+                4 этаж
+                <input type="checkbox" name="floor[]" value="4">
+                </label>
+    
+                <label>
+                5 этаж
+                <input type="checkbox" name="floor[]" value="5">
+                </label>
+        </fieldset>
+    <div>
+    <input type="submit">
+    </div>
+</form>   
+</body>
+</html>

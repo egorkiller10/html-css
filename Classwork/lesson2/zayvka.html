@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Заявка на поиск животного </title>
+</head>
+<body>
+    <form action="#" method="post" name="find-animal"
+    enctype="multipart/form-data">
+        <label for="cities">Выбор ближайшего города</label>
+        <select id="cities" name="cities">
+            <optgroup label="Москва и Московская область">
+                <option value="1" selected>Москва</option>
+                <option value="2">Королев</option>
+                <option value="3">Подольск</option>
+            </optgroup> 
+            <optgroup label="Нижегородская область">
+                <option value="4">Нижний Новгород</option>
+                <option value="5">Арзамас</option>
+            </optgroup>
+        </select>
+        <fieldset>
+            <legend>Категория животных</legend>
+            <label>
+                Кошка:
+                <input type="radio" name="category" value="cat">
+            </label>
+            <label>
+                Собака:
+                <input type="radio" name="category" value="dog">
+            </label>
+            <label>
+                Не имеет значения:
+                <input type="radio" name="category" value="no-difference">
+            </label>
+        </fieldset>
+    <fieldset>
+        <legend>Размер собаки</legend>
+        <label>
+            Маленькие:
+            <input type="checkbox" name="size[]" value="1">
+        </label>
+        <label>
+            Средние:
+            <input type="checkbox" name="size []" value="2">
+        </label>
+        <label>
+            Крупные:
+            <input type="checkbox" name="size []" value="3">
+        </label>
+    </fieldset>
+    <div>
+    <label for="age">Укажите максимальный возраст</label>
+    <input id="age" type="number" min="0" max="50" name="age">
+    </div>
+    <div>
+        <label for="additional-info">
+        Дополнительная информация
+        </label>
+            <textarea name="additionel-info"></textarea>
+    </div>
+    <div>
+        <label for="image">Загрузите изображение</label>
+        <!-- для загрузки одного файла -->
+        <input id="image" type="file" name="image" accept="image/*">
+        <!-- для загрузки нескольких файлов -->
+        <!-- <input type="file" name="image[]" multiple> -->
+
+    </div>
+    <input type="email" placeholder="Укажите почту" name="email">
+<label>
+    К какому числу Вам нужно подобрать животное
+    <input type="datetime-local" name="date">
+</label>    
+</form>
+</body>
+</html>
