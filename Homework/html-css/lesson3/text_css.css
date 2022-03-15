@@ -1,0 +1,23 @@
+body {
+    font-size: 30px;
+}
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+.up_red {
+    text-transform: uppercase;
+    color: #D50000;
+}
+.line {
+    text-decoration: line-through #D50000;
+    
+}
+a {
+    color: #D50000;
+    text-decoration: none;
+}
+.red {
+    color: #D50000;
+    font-weight: bolder;
+}

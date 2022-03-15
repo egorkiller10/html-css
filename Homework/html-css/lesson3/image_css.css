@@ -1,0 +1,32 @@
+div{
+    display: inline-block;
+}
+h1 {
+    text-align: center;
+    background-color: #E1BEE7;
+    font-weight: lighter;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+    color: #212121;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.horizontal {
+    display: inline-block;    
+}
+.first{
+    opacity: .2;
+}
+.second{
+    opacity: .7;
+}
+.column {
+    float: left;
+    max-width: 33%;
+    padding: 5px;
+  }

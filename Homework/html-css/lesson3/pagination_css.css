@@ -1,0 +1,16 @@
+div {
+    text-align: center;
+    color: black;
+    font-size: 70px;
+    margin-top: 150px;
+}
+a {
+    padding: 40px;
+    border: solid 5px #D50000;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #D50000;
+}
+.orange{
+    background-color: #FFA726;
+}
