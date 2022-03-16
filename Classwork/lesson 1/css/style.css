@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+body { 
+    font-size: 20px;
+    background-color:#B2DFDB ;
+    color: #212121;
+    margin: 0;
+}
+
+a {
+color: inherit;
+text-decoration: none;
+/* 
+overline-линия над текстом
+line-through-перечеркнутый текст
+underline-линия под текстом
+blink-не используется
+none-отсутствие декорирования
+ */
+text-transform: uppercase ;
+/* 
+uppercase верхний регистр
+lowercase нижний регистр
+capitalize первая буква заглавная
+*/
+font-weight: bold;
+/* 
+bolder
+lighter
+normal
+100...900
+*/
+padding: 15px 20px;
+display: inline-block;
+/* display: block; блочный*/
+/* display: inline; строчный */
+/* display: none;  */
+}
+/* section h1 будет применяться ко всем тегам h1 в данной секции*/
+section > h1 { /* будет применяться только к дочернему тегу h1 */
+text-transform: uppercase;
+text-align: center;
+/* 
+center выравнивание по центру
+left по левому краю
+right по правому краю
+justify- по ширине
+*/
+}
+.item { /* селектор класса */
+    background-color: #EF5350;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.item img{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #212121;
+    border-radius: 50%;
+    opacity: .7;
+}
+/* div { 
+    opacity: .7;
+    background-color:rgb(103, 58, 183)-прозрачность всего что 
+    входит в div ;
+
+    background-color: rgba(103, 58, 183, 0.7 )- прозрачность только
+    вложенной картинки
+}*/
+.item a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #A1887F;
+    color: #00E676;
+    /* color: transparent; цвет будет как у родителя */
+    border-radius: 5px;
+    /* width: 100% */
+    display: block; 
+    text-align: center;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.beauty {
+    text-align: center;
+}
+.text-bold {
+    font-weight: bold;
+}
