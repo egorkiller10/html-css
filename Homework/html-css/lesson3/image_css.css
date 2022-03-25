@@ -23,5 +23,6 @@ a {
     opacity: .7;
 }
 .item{
-    object-fit: cover;
+    width: 33%;
+    height: auto
 }

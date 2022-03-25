@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-size: 30px;
+}
+header{
+    background-color: #6D4C41;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px 0;
+}
+li a{
+    color: white;
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}

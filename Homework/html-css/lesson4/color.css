@@ -1,0 +1,25 @@
+img{
+    height: auto;
+    max-width: 200px;
+}
+div{
+    margin: 3px;
+    background-color: #FF5722;
+}
+.align-items{
+    align-items: center;
+}
+nav{
+    background-color: #F57C00;
+    font-size:  50px;
+    padding: 0 50px;
+}
+main{
+    display: flex;
+    margin: 5px;
+}
+aside > a{
+    background-color: #DCEDC8;
+    font-size: 0px;
+    text-transform: none;
+}

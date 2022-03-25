@@ -1,0 +1,43 @@
+*{
+    max-width: 1200;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+nav{
+    background-color: #F57C00;
+    font-size:  50px;
+    padding: 0 50px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin: 0 50px;
+}
+img{
+    max-width: 500px;
+    height: auto;
+}
+main{
+    display: flex;
+    margin: 5px;
+}
+aside{
+    background-color: #DCEDC8;
+    font-size: 50px;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+p{
+    background-color: #F57C00;
+}
+.align-content{
+    height: 1300px; /* необходима высота */
+    flex-wrap: wrap; /* необходимо разрешить перенос */
+    flex-direction: row;
+    align-content: space-around;
+    gap: 10px;
+}

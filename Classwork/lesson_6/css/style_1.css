@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-size: 20px;
+}
+
+img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flex-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    background-color: #FF7043;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+header a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#5C6BC0;
+    border-bottom: 3px solid transparent;
+    padding: 15px 30px;
+    display: inline-block;
+}
+header a.active{
+    border-color:#5C6BC0 ;
+}
+input{
+    border: 2px solid #5C6BC0;
+}
+.carousel{
+    margin-top: 100px;
+}
+.carousel div{
+    display: none;
+}
+.carousel img{
+    display: block;
+}
+.carousel div.active{
+    display: block;
+}
+.carousel div{
+    position: relative;
+}
+.carousel span{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #FF7043;
+    color: #212121;
+    padding: 10px 20px;
+    
+}
+.magrin-bottom40{
+    margin-bottom: 40px;
+}
+.up-button{
+    background-color: #FF7043;
+    position: fixed;
+    color: #5C6BC0;
+    /* border-radius: 50%;
+    padding: 15px;
+    z-index: 1;
+    right: 30px;
+    bottom: 30px; */
+   bottom: 50px;
+   right: 60px;
+   height: 60px;
+   width: 60px;
+   line-height: 60px;
+   text-align: center;
+   border-radius: 50%;
+    
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+}
+main div{
+    padding: 15px;
+    background-color: #5C6BC0;
+    text-transform: capitalize;
+    position: relative;
+    text-align: auto;
+}
+main a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #EC407A;
+    padding: 10px 0;
+}
+main div:nth-child(4){
+    grid-column: 1/3;
+    display: flex;
+}
+main div:nth-child(4) img{
+    height: 100%;
+    width: 33%;
+}
+main div:nth-child(4) a{
+  align-self: flex-end;
+}
+h2{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    background-color: #FF7043;
+    color: #212121;
+    padding: 5px 5px;
+}
+div h2.dis{
+    position: static;
+}
+
