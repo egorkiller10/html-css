@@ -1,29 +1,109 @@
 *{
     box-sizing: border-box;
 }
-body{
-    margin: 0;
+a{
+    text-decoration: none;
+    color: #ffffff;
     font-size: 30px;
 }
-header{
-    background-color: #6D4C41;
-}
 ul{
+    background-color: #795548;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
     display: flex;
     justify-content: space-around;
-    list-style-type: none;
-    margin: 0;
-    padding: 15px 0;
 }
-li a{
-    color: white;
+li {
+    background-color: #795548;
+    position: relative;
     text-decoration: none;
+    padding: 15px;
+    display: block;
 }
-.container{
-    max-width: 1200px;
+ul li ul{
+    visibility: hidden;
+    position: absolute;
+    display: none;
+    opacity: 0;
+    left: 0;
+    padding: 30px;
+    text-align: center;
+}
+ul li:hover> ul{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+section{
+    background-color: #5D4037;
+    width: 500px;
+    height: 500px;
     margin: 0 auto;
+    border-radius: 5px;
+  
 }
-.flex-column{
-    display: flex;
-    flex-direction: column;
+form{
+    text-align: center;
+}
+div{
+    margin: 15px 0;
+    padding: 0 60px; 
+}
+label{
+    color: #ffffff;
+    font-size: 30px;
+}
+input[type=text]{
+    border-style: none;
+    outline-style: none;
+    border-bottom: 2px solid #ffffff;
+    background-color: transparent;
+    font-size: 30px;
+}
+input[type=password]{
+    border-style: none;
+    outline-style: none;
+    border-bottom: 2px solid #ffffff;
+    background-color: transparent;
+    font-size: 30px;
+}
+#remember{
+    display: none;
+}
+label::before{
+   border-radius: 3px;
+}
+#remember:checked + label::before{
+    content:"✓";
+    border: 1px solid #ffffff;
+}
+#form{
+    display: none;
+}
+#form:target{
+    display:block;
+}
+.enter{
+    position: relative;
+}
+.btn_enter{
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+}
+.close{
+    background-color:transparent;
+    color: #ffffff;
+    border: none;
+    margin-left: auto;
+}
+.close::after{
+    content: "🞫";
+    width: 30px;
+    height: 30px;
+}
+.btn_close{
+    text-align: right;
 }

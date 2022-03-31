@@ -7,18 +7,40 @@
 </head>
 <body>
     <header> 
-    <ul class="container">
+    <ul>
         <li><a href="#" >Пункт 1</a></li>
-        <li>
-            <a href="#">Пункт 2</a>
-            <ul class="flex-column">
+        <li><a href="#">Пункт 2</a>
+            <ul>
                 <li><a href="#">Подпункт 2.1</a></li>
                 <li><a href="#">Подпункт 2.2</a></li>
+                <li><a href="#">Подпункт 2.3</a></li>
             </ul>
         </li>
         <li><a href="#">Пункт 3</a></li>
-        <li><a href="#">Личный кабинет</a></li>
+        <li><a href="#form">Личный кабинет</a></li>
    </ul>
 </header>
+<main>
+    <section id="form">
+        <form>
+            <div class="btn_close">
+                <button type="button" class="close"></button>
+            </div>
+            <div>
+                <input type="text" placeholder="логин">
+            </div>
+            <div>
+                <input type="password" placeholder="пароль">
+            </div>
+            <div>
+                <input id="remember" type="checkbox">
+                <label for="remember">Запомнить</label>
+            </div>
+            <div class="enter">
+                <input type="button" class="btn_enter" value="Войти">
+            </div>
+        </form>
+    </section>
+</main>
 </body>
 </html>
